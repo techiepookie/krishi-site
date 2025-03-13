@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detector - Hackathon Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href= "static/css/index.css">
+    <script src="static/js/index.js"> </script>
+    
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <i class="fas fa-shield-alt logo-icon"></i>
+                    <div class="logo">Deep Fake Detector</div>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#source-code" class="nav-link">Source Code</a>
+                    <button class="cta-button">Try Demo</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">AI-Powered Deepfake Detection</h1>
+                <p class="hero-subtitle">Our hackathon project uses neural networks to identify manipulated media with high accuracy. Upload any suspicious content and get instant analysis.</p>
+                
+                <div class="hero-buttons">
+                    <button class="cta-button">Try It Now</button>
+                    <button class="secondary-button">View on GitHub</button>
+                </div>
+                
+                <!-- Interactive Demo -->
+                <div class="demo-container">
+                    <div class="upload-area">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <div class="upload-text">
+                            <h3>Try Our Detector</h3>
+                            <p>Drag & drop any image or video file or click to upload</p>
+                        </div>
+                        <button class="cta-button">Analyze Media</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Section -->
+        <div class="stats-container container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="processedFiles">94%</div>
+                    <p class="stat-label">Accuracy Rate</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="detectionRate">0.6s</div>
+                    <p class="stat-label">Avg. Process Time</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="responseTime">5+</div>
+                    <p class="stat-label">Detection Methods</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-brain feature-icon"></i>
+                    <h3 class="feature-title">Neural Analysis</h3>
+                    <p class="feature-description">Our deep learning model analyzes facial inconsistencies, lighting anomalies, and digital artifacts to identify manipulated content.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3 class="feature-title">Real-time Processing</h3>
+                    <p class="feature-description">Get quick results with our optimized algorithm that can process most media files in under a second.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3 class="feature-title">Detailed Reports</h3>
+                    <p class="feature-description">Receive comprehensive analysis showing confidence scores and highlighted areas of potential manipulation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-desktop feature-icon"></i>
+                    <h3 class="feature-title">User-Friendly Interface</h3>
+                    <p class="feature-description">Simple drag-and-drop functionality and visual results make our tool accessible to everyone, no technical expertise required.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-code feature-icon"></i>
+                    <h3 class="feature-title">Open Source</h3>
+                    <p class="feature-description">All our code is open-source and available for review, contributions, and educational purposes.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-globe feature-icon"></i>
+                    <h3 class="feature-title">Browser-Based</h3>
+                    <p class="feature-description">No installation needed - our tool runs directly in your browser for convenience and accessibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Upload</h3>
+                    <p class="step-description">Upload any suspicious media file through our simple drag-and-drop interface.</p>
+                </div>
+                
+                <div class="connector"></div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Process</h3>
+                    <p class="step-description">Our AI engine analyzes the file using multiple detection techniques simultaneously.</p>
+                </div>
+                
+                <div class="connector"></div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Results</h3>
+                    <p class="step-description">View a detailed report with confidence scores and visual indicators of potential manipulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Project Section -->
+    <section class="about-project" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="about-title">About This Project</h2>
+                    <div class="about-description">
+                        <p>Deep Fake Detector was created as a hackathon project aimed at addressing the growing concern of manipulated media online. With the rise of synthetic media technologies, it's becoming increasingly difficult to distinguish between authentic and artificial content.</p>
+                        <br>
+                        <p>Our team developed this tool using a combination of convolutional neural networks and frequency domain analysis to identify telltale signs of manipulation that might not be visible to the human eye. The project leverages TensorFlow.js to run complex ML models directly in the browser, making powerful deepfake detection accessible to everyone.</p>
+                        <br>
+                        <p>While still in development, our model currently achieves a 94% accuracy rate on standard deepfake detection benchmarks. We're continuously improving our algorithms and training on newer, more sophisticated deepfakes to stay ahead of advancing technology.</p>
+                    </div>
+                    
+                    <div class="team-section">
+                        <h3 class="team-title">Our Team</h3>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <div class="team-member-name">Team Member 1</div>
+                                <div class="team-member-role">ML Engineer</div>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-member-name">Team Member 2</div>
+                                <div class="team-member-role">Frontend Developer</div>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-member-name">Team Member 3</div>
+                                <div class="team-member-role">Backend Developer</div>
+                            <div class="team-member">
+                                <div class="team-member-name" >Team Member 4</div>
+                                <div class="team-member-role">ML Engineer</div>
+                            </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    
+
+    <!-- Footer -->
+    <footer class="footer-container" id="source-code">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#how-it-works" class="footer-link">How It Works</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="https://github.com" class="footer-link">GitHub</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+                <div class="footer-note">
+                    <p>This project was created for [Hackathon Name] by [Team Name]. All rights reserved.</p>
